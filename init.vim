@@ -30,4 +30,3 @@ execute 'source '.nvim_settings_dir.'nerdtree.vim'
 execute 'source '.nvim_settings_dir.'fzf.vim'
 
 
-" alo
