@@ -29,4 +29,4 @@ let nvim_settings_dir = '~\AppData\Local\nvim\settings\'
 execute 'source '.nvim_settings_dir.'nerdtree.vim'
 execute 'source '.nvim_settings_dir.'fzf.vim'
 
-
+let $PATH = "C:\\Program Files\\Git\\usr\\bin;" . $PATH
