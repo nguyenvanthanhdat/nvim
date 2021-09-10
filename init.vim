@@ -19,10 +19,18 @@ call plug#begin('~/AppData/Local/nvim/plugged')
 "{ Terminal }
  Plug 'voldikss/vim-floaterm'
 
+"{ Code Intelligence }
+ Plug 'neoclide/coc.nvim', {'branch': 'release'}
+ Plug 'jiangmiao/auto-pairs'
+
+"{ Git status }
+ Plug 'tpope/vim-fugitive'
+
 call plug#end()
 
 "{ Settings }
 syntax on
+set encoding=utf-8
 
 " Theme
 colorscheme gruvbox
@@ -39,6 +47,8 @@ execute 'source '.nvim_settings_dir.'nerdtree.vim'
 execute 'source '.nvim_settings_dir.'fzf.vim'
 execute 'source '.nvim_settings_dir.'status-line.vim'
 execute 'source '.nvim_settings_dir.'floaterm.vim'
+execute 'source '.nvim_settings_dir.'coc.vim'
+execute 'source '.nvim_settings_dir.'fugitive.vim'
 
 " Variable nvim
 let $PATH = "C:\\Program Files\\Git\\usr\\bin;" . $PATH
