@@ -28,4 +28,4 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
 " If have mitigating lag issues
-"let g:NERDTreeLimitedSyntax = 1
+let g:NERDTreeLimitedSyntax = 1
