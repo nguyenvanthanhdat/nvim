@@ -38,6 +38,7 @@ colorscheme gruvbox
 "  nvim
 set termguicolors
 set number
+set cul
 map <F9> :bprevious<CR>
 map <F10> :bnext<CR>
 
