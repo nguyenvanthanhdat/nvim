@@ -22,9 +22,11 @@ call plug#begin('~/AppData/Local/nvim/plugged')
 "{ Code Intelligence }
  Plug 'neoclide/coc.nvim', {'branch': 'release'}
  Plug 'jiangmiao/auto-pairs'
+ Plug 'Chiel92/vim-autoformat'
 
 "{ Git status }
  Plug 'tpope/vim-fugitive'
+
 
 call plug#end()
 
@@ -39,6 +41,7 @@ colorscheme gruvbox
 set termguicolors
 set number
 set cul
+set nohlsearch
 map <F9> :bprevious<CR>
 map <F10> :bnext<CR>
 
@@ -50,6 +53,7 @@ execute 'source '.nvim_settings_dir.'status-line.vim'
 execute 'source '.nvim_settings_dir.'floaterm.vim'
 execute 'source '.nvim_settings_dir.'coc.vim'
 execute 'source '.nvim_settings_dir.'fugitive.vim'
+execute 'source '.nvim_settings_dir.'auto-format.vim'
 
 " Variable nvim
 let $PATH = "C:\\Program Files\\Git\\usr\\bin;" . $PATH
