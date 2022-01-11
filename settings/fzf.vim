@@ -16,3 +16,5 @@ function! s:fzf_statusline()
 endfunction
 
 autocmd! User FzfStatusLine call <SID>fzf_statusline()
+
+nnoremap <S-f> :Files<CR>
