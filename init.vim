@@ -46,6 +46,7 @@ set number
 set cul
 set nohlsearch
 set background=dark
+set scrolloff=8
 map <F9> :bprevious<CR>
 map <F10> :bnext<CR>
 
