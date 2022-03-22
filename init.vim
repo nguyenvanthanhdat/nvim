@@ -1,4 +1,6 @@
-call plug#begin('~/AppData/Local/nvim/plugged')
+let file_local = stdpath('config')
+"call plug#begin('~\AppData\Local\nvim\plugged')
+cal plug#begin(file_local.'\plugged')
 "{ Theme }
 Plug 'morhetz/gruvbox'
 
@@ -51,7 +53,7 @@ map <F9> :bprevious<CR>
 map <F10> :bnext<CR>
 
 " Extended the settings
-let nvim_settings_dir = '~\AppData\Local\nvim\settings\'
+let nvim_settings_dir = file_local.'\settings\'
 execute 'source '.nvim_settings_dir.'nerdtree.vim'
 execute 'source '.nvim_settings_dir.'fzf.vim'
 execute 'source '.nvim_settings_dir.'status-line.vim'
