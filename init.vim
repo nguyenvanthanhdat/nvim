@@ -30,8 +30,9 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'tpope/vim-fugitive'
 
 "{Language Sever Protocol}
-Plug 'prabirshrestha/vim-lsp'
-Plug 'mattn/vim-lsp-settings'
+"Plug 'prabirshrestha/vim-lsp'
+"Plug 'mattn/vim-lsp-settings'
+
 
 call plug#end()
 
@@ -51,6 +52,7 @@ set background=dark
 set scrolloff=8
 map <F9> :bprevious<CR>
 map <F10> :bnext<CR>
+nmap <C-c> :bd<CR>
 
 " Extended the settings
 let nvim_settings_dir = file_local.'\settings\'
