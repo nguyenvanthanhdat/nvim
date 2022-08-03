@@ -31,4 +31,4 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 let g:NERDTreeLimitedSyntax = 1
 
 " Automatically close NERDTree after opening a bookmark
-let NERDTreeQuitOnOpen=1
+let NERDTreeQuitOnOpen = 1
